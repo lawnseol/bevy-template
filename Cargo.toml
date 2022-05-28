@@ -14,5 +14,5 @@ edition = "2021"
 [dependencies]
 bevy = { version = "0.7.0", features = ["dynamic"] }
 
-[toolchain]
-channel = "nightly"
+[dependencies.gilrs]
+version = "0.9.0"

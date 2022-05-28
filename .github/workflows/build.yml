@@ -30,7 +30,10 @@ jobs:
         rustup component add llvm-tools-preview
     - name: dependency check
       if: runner.os == 'macos'
-      run: brew update && brew install michaeleisel/zld/zld && brew upgrade
+      run: |
+        brew update 
+        brew install llvm
+        brew upgrade
     - name: rustup install
       run: | 
         rustup toolchain install nightly

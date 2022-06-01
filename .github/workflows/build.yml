@@ -33,6 +33,7 @@ jobs:
       run: |
         brew update 
         brew install llvm
+        brew install gcc
         brew upgrade
     - name: rustup install
       run: | 

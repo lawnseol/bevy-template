@@ -34,6 +34,7 @@ jobs:
         brew update 
         brew install llvm
         brew install gcc
+        brew install michaeleisel/zld/zld
         brew upgrade
     - name: rustup install
       run: | 
